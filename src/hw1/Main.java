@@ -15,7 +15,7 @@ public class Main {
         negPos(-25);
         negative(25);
         hello("Victor");
-        visokos(1803);
+        visokos(1904);
     }
 
 
@@ -55,9 +55,9 @@ public class Main {
     }
 
     public static void visokos(int year) {
-        if (year % 400 == 0 && year % 100 == 0) {
+        if (year % 400 == 0) {
             System.out.println("Год високосный");
-        } else if(year%4 ==0 && year % 100 == 0) {
+        } else if(year % 100 == 0) {
             System.out.println("Год не високосный");
 
         }else if(year%4 ==0){
