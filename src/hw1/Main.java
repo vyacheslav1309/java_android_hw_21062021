@@ -13,24 +13,19 @@ public class Main {
         System.out.println(calculate(1.1f, 2.1f, 3.1f, 4.1f));
         System.out.println(sum(5, 5));
         negPos(-25);
-        negative(25);
+        negative(35);
         hello("Victor");
         visokos(1904);
     }
 
 
-    public static float calculate(float a, float b, float c, float d) {
+      public static float calculate(float a, float b, float c, float d) {
         return a * (b + (c / d));
     }
 
     public static boolean sum(int i, int j) {
         int h = i + j;
-        if (h >= 10 && h <= 20) {
-
-            return true;
-        } else {
-            return false;
-        }
+        return h >= 10 && h <= 20;
     }
 
     public static void negPos(int s) {
@@ -42,12 +37,7 @@ public class Main {
 
     }
 
-    public static boolean negative(int q) {
-        if (q <= 0) {
-            return true;
-        } else {
-            return false;
-        }
+    public static void negative(int q) {
     }
 
     public static void hello(String name) {
