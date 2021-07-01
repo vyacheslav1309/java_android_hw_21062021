@@ -30,7 +30,7 @@ public class Main {
             }
             pop++;
         }
-        System.out.println("Ваши попытки закончились. Начать игру заново? Да? Нажмите 1; Нет? нажмите 0:");
+        System.out.println("Ваши попытки закончились. Начать игру заново? Да? Нажмите 1; Нет? Нажмите 0:");
 
         String userData = input.next();
         if(userData.equals("1")){
