@@ -18,8 +18,9 @@ public class Employees {
 
     }
 
-    public void info() {
+    public boolean printInfo() {
         System.out.println("Имя пользователя: " + name + "; Должность: " + position + "; Возраст: " + age + "; Электронная почта: " + email + "; Номер телефона: " + phone_number);
+        return false;
     }
 
     public static void main(String[] args) {
@@ -32,7 +33,7 @@ public class Employees {
         employees[4] = new Employees("Владимирова Влада", "Личная уборщица Главного босса", "megaboss@mail.ru", "+7777777777", 4000000, 20);
         for (int i = 0; i < employees.length; i++) {
             if (employees[i].age > 40) {
-                System.out.println();
+                System.out.println(employees[i].printInfo());
                 System.out.println();
 
             }
